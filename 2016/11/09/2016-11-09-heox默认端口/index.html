@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://ligoweb.com">
   <title>Hexo默认端口 | 立购网-Albin博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="很多人在使用hexo搭建个人博客时进行预览时候都会输入下面的指令 1$ hexo s 通常会得到以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，你就可以在浏览器地址栏输入http://localh">
+  <meta name="description" content="我们在使用hexo框架搭建个人博客时进行本地预览效果时通常是输入下面的指令 1$ hexo s 命令控制台会输出以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，之后就可以在浏览器地址栏输入http">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo默认端口">
 <meta property="og:url" content="http://ligoweb.com/2016/11/09/2016-11-09-heox默认端口/index.html">
 <meta property="og:site_name" content="立购网-Albin博客">
-<meta property="og:description" content="很多人在使用hexo搭建个人博客时进行预览时候都会输入下面的指令 1$ hexo s 通常会得到以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，你就可以在浏览器地址栏输入http://localh">
-<meta property="og:updated_time" content="2017-03-09T10:47:46.000Z">
+<meta property="og:description" content="我们在使用hexo框架搭建个人博客时进行本地预览效果时通常是输入下面的指令 1$ hexo s 命令控制台会输出以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，之后就可以在浏览器地址栏输入http">
+<meta property="og:updated_time" content="2017-04-19T16:28:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo默认端口">
-<meta name="twitter:description" content="很多人在使用hexo搭建个人博客时进行预览时候都会输入下面的指令 1$ hexo s 通常会得到以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，你就可以在浏览器地址栏输入http://localh">
+<meta name="twitter:description" content="我们在使用hexo框架搭建个人博客时进行本地预览效果时通常是输入下面的指令 1$ hexo s 命令控制台会输出以下结果： 123$ hexo sINFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop. 表示服务已经在4000端口开启，之后就可以在浏览器地址栏输入http">
   
     <link rel="alternative" href="/atom.xml" title="立购网-Albin博客" type="application/atom+xml">
   
@@ -178,13 +178,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>很多人在使用hexo搭建个人博客时进行预览时候都会输入下面的指令</p>
+        <p>我们在使用hexo框架搭建个人博客时进行本地预览效果时通常是输入下面的指令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
-<p>通常会得到以下结果：</p>
+<p>命令控制台会输出以下结果：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
-<p>表示服务已经在4000端口开启，你就可以在浏览器地址栏输入<a href="">http://localhost:4000</a>进行访问预览。但结果往往不是我们所预期的，浏览器会告知我们无法访问，这种情况大多数是因为4000端口被占用了，如果查看系统端口占用情况的话会看到其它程序正在使用。<br>针对这个问题我们有两种解决方案：<br>1、修改服务端口指令</p>
+<p>表示服务已经在4000端口开启，之后就可以在浏览器地址栏输入<a href="">http://localhost:4000</a>进行本地预览。但结果有时后浏览器会提示无法访问当前地址，这种情况大多数是因为4000端口被占用了，如果查看系统端口占用情况的话会看到有其它程序正在使用当前端口。<br>针对这个问题我们有两种解决方案：<br>1、临时修改服务端口指令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
-<p>这种方法可以将服务端口临时修改为5000端口，这样就可以打开浏览器进入localhost:5000进行效果预览</p>
+<p>这种方法可以将服务端口临时修改为5000端口，修改完之后就可以打开浏览器进入localhost:5000进行本地效果的预览。</p>
 <p>2、修改hexo默认服务端口</p>
 <p>我们进入到hexo根目录，找到node_modules文件夹，然后找到hexo-server文件夹，在该文件夹下找到配置文件进行修改，主要修改两个文件，一个是index.js文件，打开该文件后将里面的port参数修改为5000，另一个是lib文件夹下的server.js文件，同样的方法将原来的参数4000修改为5000，这样重新运行hexo就可以会将默认服务端口修改为5000。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:5000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
@@ -282,8 +282,8 @@
     </a>
   
   
-    <a href="/2016/12/20/2016-12-20-nodeJS建立服务器/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">nodeJs服务器建立</div>
+    <a href="/2016/12/20/2016-12-20-canvas画图/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">canvas</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -405,10 +405,6 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -418,6 +414,18 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

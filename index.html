@@ -158,6 +158,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-2017-04-20-gulp学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/20/2017-04-20-gulp学习笔记/">gulp学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/20/2017-04-20-gulp学习笔记/" class="archive-article-date">
+  	<time datetime="2017-04-20T00:10:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>gulp是一个前端构建工具，与grunt相比，gulp无需写一大堆繁杂的配置参数，API也非常简单，学习起来很容易，而且gulp使用的是node.js中stream来读取和操作数据，其速度更快。</p>
+</blockquote>
+<h2 id="1、gulp的安装"><a href="#1、gulp的安装" class="headerlink" title="1、gulp的安装"></a>1、gulp的安装</h2><p>首先确保已经正确安装了node.js环境，然后以全局方式安装gulp:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g gulp</div></pre></td></tr></table></figure>
+<p>全局安装gulp后需要在项目目录再单独安装一次</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp --save-dev</div></pre></td></tr></table></figure>
+<h2 id="2、建立gulpfile-js文件"><a href="#2、建立gulpfile-js文件" class="headerlink" title="2、建立gulpfile.js文件"></a>2、建立gulpfile.js文件</h2><p>就像grunt需要一个Gruntfile.js文件一样，gulp也需要一个文件作为它的主文件，在gulp中的这个文件叫做gulpfile.js。在项目根目录下新建一个文件名为gulpfile.js的文件。之后要做的事情就是在gulpfile.js文件中定义我们的任务了。下面是一个最简单的gulpfile.js文件内容示例，它定义了一个默认的任务。</p>
+        
+          <a class="article-more-a" href="/2017/04/20/2017-04-20-gulp学习笔记/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">gulp</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/20/2017-04-20-gulp学习笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-2017-4-20-hexo常用命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -261,7 +332,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Webpack</a>
         		</li>
       		
 		</ul>
@@ -272,6 +343,72 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/04/04/2017-4-4-webpack学习笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-12-20-nodeJS建立服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/20/2016-12-20-nodeJS建立服务器/">nodeJs服务器建立</a>
+    </h1>
+  
+
+        
+        <a href="/2016/12/20/2016-12-20-nodeJS建立服务器/" class="archive-article-date">
+  	<time datetime="2016-12-20T03:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>如何利用node.js创建一个简单的服务器并实现数据传输呢？</p>
+<h2 id="1、创建app-js文件"><a href="#1、创建app-js文件" class="headerlink" title="1、创建app.js文件"></a>1、创建app.js文件</h2><p>我们可以本地创建一个node文件夹，然后在该文件夹下先新建一个app.js文件,在app.js文件中编写以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// 引入node.js的http模块，并设置服务器地址和端口</div><div class="line">const http = require(&apos;http&apos;);</div><div class="line">const hostname = &apos;127.0.0.1&apos;</div><div class="line">const port = 3000;</div><div class="line"></div><div class="line">// 创建一个web服务器并根据相应状态返回相应值</div><div class="line">const server = http.createServer((req, res) =&gt; &#123;</div><div class="line">  res.statusCode = 200;</div><div class="line">  res.setHeader(&apos;Content-Type&apos;, &apos;text/plain&apos;);</div><div class="line">  res.end(&apos;Hello world\n&apos;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 监听服务器端口并打印日志信息</div><div class="line">server.listen(port, hostname, () =&gt; &#123;</div><div class="line">  console.log(&apos;Server running at http://$(hostname):$&#123;port&#125;/&apos;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>在命令行中切换到node文件夹，使用node命令运行server.js文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ node server.js</div><div class="line">Server running at http://127.0.0.1:3000/</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Node.js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/20/2016-12-20-nodeJS建立服务器/">展开全文 >></a>
         </p>
       
 
@@ -344,72 +481,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2016/12/20/2016-12-20-canvas画图/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-2016-12-20-nodeJS建立服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/20/2016-12-20-nodeJS建立服务器/">nodeJs服务器建立</a>
-    </h1>
-  
-
-        
-        <a href="/2016/12/20/2016-12-20-nodeJS建立服务器/" class="archive-article-date">
-  	<time datetime="2016-12-20T03:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>如何利用node.js创建一个简单的服务器并实现数据传输呢？</p>
-<h2 id="1、创建app-js文件"><a href="#1、创建app-js文件" class="headerlink" title="1、创建app.js文件"></a>1、创建app.js文件</h2><p>我们可以本地创建一个node文件夹，然后在该文件夹下先新建一个app.js文件,在app.js文件中编写以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// 引入node.js的http模块，并设置服务器地址和端口</div><div class="line">const http = require(&apos;http&apos;);</div><div class="line">const hostname = &apos;127.0.0.1&apos;</div><div class="line">const port = 3000;</div><div class="line"></div><div class="line">// 创建一个web服务器并根据相应状态返回相应值</div><div class="line">const server = http.createServer((req, res) =&gt; &#123;</div><div class="line">  res.statusCode = 200;</div><div class="line">  res.setHeader(&apos;Content-Type&apos;, &apos;text/plain&apos;);</div><div class="line">  res.end(&apos;Hello world\n&apos;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 监听服务器端口并打印日志信息</div><div class="line">server.listen(port, hostname, () =&gt; &#123;</div><div class="line">  console.log(&apos;Server running at http://$(hostname):$&#123;port&#125;/&apos;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>在命令行中切换到node文件夹，使用node命令运行server.js文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ node server.js</div><div class="line">Server running at http://127.0.0.1:3000/</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Node.js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/20/2016-12-20-nodeJS建立服务器/">展开全文 >></a>
         </p>
       
 
@@ -662,6 +733,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">HTML5</a>
               </li>
              
@@ -670,15 +745,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
+                <a href="javascript:void(0)" class="js-tag color3">Webpack</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
               </li>
             
             <div class="clearfix"></div>

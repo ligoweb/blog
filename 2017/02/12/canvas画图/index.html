@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://ligoweb.com">
-  <title>Tag: html5 | 立购网-Albin博客</title>
+  <title>canvas画图 | 立购网-Albin博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="立购网-Albin博客">
-<meta property="og:url" content="http://ligoweb.com/tags/html5/index.html">
+  <meta name="description" content="HTML5中新加入了&amp;lt;canvas\&amp;gt;元素标签用于图形的绘制，借助于javascript可以完成许多复杂图形的绘制。">
+<meta name="keywords" content="html5,canvas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas画图">
+<meta property="og:url" content="http://ligoweb.com/2017/02/12/canvas画图/index.html">
 <meta property="og:site_name" content="立购网-Albin博客">
-<meta property="og:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta property="og:description" content="HTML5中新加入了&amp;lt;canvas\&amp;gt;元素标签用于图形的绘制，借助于javascript可以完成许多复杂图形的绘制。">
+<meta property="og:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-01.png">
+<meta property="og:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-02.png">
+<meta property="og:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-03.png">
+<meta property="og:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-04.png">
+<meta property="og:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-05.png">
+<meta property="og:updated_time" content="2017-04-25T16:43:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="立购网-Albin博客">
-<meta name="twitter:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta name="twitter:title" content="canvas画图">
+<meta name="twitter:description" content="HTML5中新加入了&amp;lt;canvas\&amp;gt;元素标签用于图形的绘制，借助于javascript可以完成许多复杂图形的绘制。">
+<meta name="twitter:image" content="http://ligoweb.com/2017/02/12/canvas画图/canvas-01.png">
   
     <link rel="alternative" href="/atom.xml" title="立购网-Albin博客" type="application/atom+xml">
   
@@ -158,36 +166,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-canvas画图" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/12/canvas画图/" class="archive-article-date">
-  	<time datetime="2017-02-12T13:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/02/12/canvas画图/">canvas画图</a>
+    <h1 class="article-title" itemprop="name">
+      canvas画图
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/02/12/canvas画图/" class="archive-article-date">
+  	<time datetime="2017-02-12T13:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>HTML5中新加入了<code>&lt;canvas\&gt;</code>元素标签用于图形的绘制，借助于javascript可以完成许多复杂图形的绘制。</p>
+</blockquote>
+<a id="more"></a>
+<p>使用canvas可以从以下几个步骤入手：</p>
+<h2 id="1、创建一个画布"><a href="#1、创建一个画布" class="headerlink" title="1、创建一个画布"></a>1、创建一个画布</h2><p>通过在html中加入下列代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;canvas id=&apos;myCanvas&apos;&gt;&lt;/canvas&gt;</div></pre></td></tr></table></figure>
+<p>就可以建立一个画布canvas画布</p>
+<h2 id="2、javascript引入canvas绘图API"><a href="#2、javascript引入canvas绘图API" class="headerlink" title="2、javascript引入canvas绘图API"></a>2、javascript引入canvas绘图API</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var cav =document.getElementById(&apos;myCanvas&apos;);           //通过id获取canvas对象</div><div class="line">var ctx=c.getContext(&apos;2d&apos;);//创建context，该对象为H5内置对象，拥有绘制API方法</div><div class="line">cav.width=300;                                          //指定画布的宽度</div><div class="line">cav.heigth=300;                                         //指定画布的高度</div></pre></td></tr></table></figure>
+<h2 id="3、绘制路径"><a href="#3、绘制路径" class="headerlink" title="3、绘制路径"></a>3、绘制路径</h2><p>在canvas画布中我们可以使用以下法进行路径线条的绘制：</p>
+<ul>
+<li>moveTo(x,y)           </li>
+</ul>
+<blockquote>
+<p>定义绘制线条的开始坐标</p>
+</blockquote>
+<ul>
+<li>lineTo(x,y)           </li>
+</ul>
+<blockquote>
+<p>定义绘制线条的结束坐标</p>
+</blockquote>
+<ul>
+<li>stroke()              </li>
+</ul>
+<blockquote>
+<p>调用绘制方法进行绘制</p>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ctx.moveTo(100,100);            //定于开始坐标</div><div class="line">ctx.lineTo(100,200);            //定义结束坐标</div><div class="line">ctx.lineWidth=2;                //定义线条宽度</div><div class="line">ctx.strokeStyle=&quot;#ffaadd&quot;;      //定义线条颜色</div><div class="line">ctx.stroke();                   //开始绘制</div></pre></td></tr></table></figure>
+<p>执行上述JS代码就会在画布上绘制一条直线，宽度为2px,线条颜色为粉红色</p>
+<!-- ![](/images/canvas-01.png) -->
+<img src="/2017/02/12/canvas画图/canvas-01.png" alt="png01" title="png01">
+<h2 id="4、绘制弧形"><a href="#4、绘制弧形" class="headerlink" title="4、绘制弧形"></a>4、绘制弧形</h2><p>我们可以使用</p>
+<ul>
+<li>arc(x,y,r,sAngle,eAngle,boole)   </li>
+</ul>
+<p>x,y为弧形中心坐标，r会弧形半径，sAngle为绘制起始弧度角，eAngle为绘制结束弧度角，boole为可选参数，默认为false,顺时针绘制，设置true后将逆时针绘制。</p>
+<blockquote>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ctx.art(100,100,100,0,2*Math.PI);           //定义弧形绘制参数       </div><div class="line">ctx.lineWidth=5;                            //定义线条宽度</div><div class="line">ctx.strokeStyle=&quot;#ffaadd&quot;;                  //定义线条颜色</div><div class="line">ctx.stroke();                               //开始绘制</div></pre></td></tr></table></figure>
+<p>执行上述JS代码就会在画布上绘制一个半径为100，线宽为5px,线条颜色为粉红色的圆。</p>
+<img src="/2017/02/12/canvas画图/canvas-02.png" alt="png02" title="png02">
+<h2 id="5、绘制多个图形"><a href="#5、绘制多个图形" class="headerlink" title="5、绘制多个图形"></a>5、绘制多个图形</h2><p>我们可以使用</p>
+<ul>
+<li>beginPath()</li>
+</ul>
+<blockquote>
+<p>该方法为重新起始一条绘制路径</p>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">ctx.moveTo(50,100);</div><div class="line">ctx.lineTo(50,200);</div><div class="line">ctx.lineWidth=10;</div><div class="line">ctx.strokeStyle=&quot;#ffaa33&quot;;</div><div class="line">ctx.stroke();</div><div class="line">//绘制一条直线</div><div class="line"></div><div class="line">ctx.beginPath();  //重新起始一个绘制点</div><div class="line"></div><div class="line">ctx.arc(150,150,50,0,2*Math.PI);</div><div class="line">ctx.lineWidth=5;</div><div class="line">ctx.strokeStyle=&quot;#ffaadd&quot;;</div><div class="line">ctx.stroke();</div><div class="line">//绘制一个圆</div></pre></td></tr></table></figure>
+<img src="/2017/02/12/canvas画图/canvas-03.png" alt="png03" title="png03">
+<h2 id="6、进行颜色填充"><a href="#6、进行颜色填充" class="headerlink" title="6、进行颜色填充"></a>6、进行颜色填充</h2><p>可以使用</p>
+<ul>
+<li>fillStyle         </li>
+</ul>
+<blockquote>
+<p>定义填充的样式，包括颜色、渐变或模式</p>
+</blockquote>
+<ul>
+<li>fill()            </li>
+</ul>
+<blockquote>
+<p>绘制完成后进行填充</p>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">ctx.moveTo(50,100);</div><div class="line">ctx.lineTo(50,200);</div><div class="line">ctx.lineWidth=10;</div><div class="line">ctx.strokeStyle=&quot;#ffaa33&quot;;</div><div class="line">ctx.stroke();</div><div class="line">//绘制一条直线</div><div class="line"></div><div class="line">ctx.beginPath();  //重新起始一个绘制点</div><div class="line"></div><div class="line">ctx.arc(150,150,50,0,2*Math.PI);</div><div class="line">ctx.lineWidth=10;</div><div class="line">ctx.strokeStyle=&quot;#ffaadd&quot;;</div><div class="line">ctx.stroke();</div><div class="line">//绘制一个圆</div><div class="line">ctx.fillStyle=&quot;#0000ff&quot;;              //定义填充的颜色</div><div class="line">ctx.fill();                           //开始填充</div></pre></td></tr></table></figure>
+<img src="/2017/02/12/canvas画图/canvas-04.png" alt="png04" title="png04">
+<h2 id="7、创建渐变"><a href="#7、创建渐变" class="headerlink" title="7、创建渐变"></a>7、创建渐变</h2><p>可以使用</p>
+<ul>
+<li>createLinearGradient(x0,y0,x1,y1)              </li>
+</ul>
+<blockquote>
+<p>创建线性渐变,x0,y0为渐变起始点坐标，x1,y1为渐变结束点坐标</p>
+</blockquote>
+<ul>
+<li>createRadialGradient(x0,y0,r0,x1,y1,r1)        </li>
+</ul>
+<blockquote>
+<p>创建径向渐变,x0,y0,r0为渐变开始的圆的坐标及半径，x1,y1,r1为渐变结束的圆的坐标及半径</p>
+</blockquote>
+<ul>
+<li>addColorStop(stop,color)                       </li>
+</ul>
+<blockquote>
+<p>定义渐变位置及颜色stop为渐变的位置，介于0-1的数字，color为当前位置的颜色，可以设置多个addColoStop()方法以实现多种颜色之间的渐变</p>
+<p>例</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">var cav=document.getElementById(&apos;canvas&apos;);                //获取canvas对象</div><div class="line">var ctx=canvas.getContext(&apos;2d&apos;);                          //引入canvasAPI</div><div class="line">var clg=ctx.createLinearGradient(50,50,50,200);           //创建线性渐变</div><div class="line">clg.addColorStop(0,&quot;#0a00b2&quot;);                            //0%位置的渐变颜色</div><div class="line">clg.addColorStop(0.5,&quot;#ff0000&quot;);                          //50%位置的渐变颜色</div><div class="line">clg.addColorStop(1,&quot;#fffc00&quot;);                            //100%位置的渐变颜色</div><div class="line">var crg=ctx.createRadialGradient(150,150,10,150,150,40);  //创建径向渐变</div><div class="line">crg.addColorStop(0,&quot;red&quot;);                                //0%位置的渐变颜色</div><div class="line">crg.addColorStop(1,&quot;white&quot;);                              //100%位置的渐变颜色</div><div class="line"></div><div class="line">cav.width=300;                                            //设置画布宽度</div><div class="line">cav.height=300;                                           //设置画布高度      </div><div class="line"></div><div class="line">ctx.moveTo(50,50);                                        //设置画笔起点 </div><div class="line">ctx.lineTo(50,200);                                       //设置画笔终点</div><div class="line">ctx.lineWidth=10;                                         //设置画笔大小</div><div class="line">ctx.strokeStyle=clg;                                      //设置渐变方式</div><div class="line">ctx.stroke();                                             //开始绘制</div><div class="line"></div><div class="line">ctx.beginPath();                                          //开始另一个画笔起点</div><div class="line">ctx.arc(150,150,50,0,2*Math.PI);                          //设置弧形参数  </div><div class="line">ctx.lineWidth=10;                                         //设置画笔大小</div><div class="line">ctx.strokeStyle=&quot;#ffaadd&quot;;                                //设置画笔颜色</div><div class="line">ctx.stroke();                                             //开始绘制</div><div class="line">ctx.fillStyle=crg;                                        //设置填充渐变方式</div><div class="line">ctx.fill();                                               //开始填充</div></pre></td></tr></table></figure>
+<img src="/2017/02/12/canvas画图/canvas-05.png" alt="png05" title="png05">
+<p>这些基本的方法就可以满足我们一些简单的图形绘制了，但是还有许多复杂的绘制API，利用这些方法我们还可以绘制更加复杂的图形，更多方法可以参考<a href="http://www.w3school.com.cn/" target="_blank" rel="external">W3C规范</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipy.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,19 +333,118 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ligoweb.com/2017/02/12/canvas画图/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/02/10/hexo安装及常用命令/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          hexo安装及常用命令
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/02/15/node.js创建server服务/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">node.js创建server服务</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="canvas画图" data-title="canvas画图" data-url="http://ligoweb.com/2017/02/12/canvas画图/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ligoweb"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -238,9 +467,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

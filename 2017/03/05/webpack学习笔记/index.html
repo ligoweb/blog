@@ -6,17 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://ligoweb.com">
-  <title>Tag: html5 | 立购网-Albin博客</title>
+  <title>webpack学习笔记 | 立购网-Albin博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="立购网-Albin博客">
-<meta property="og:url" content="http://ligoweb.com/tags/html5/index.html">
+  <meta name="description" content="webpack是当下最热门的前端资源模块化管理和打包工具，它能将各种资源，例如CommonJs模块、AMD模块、ES6模块、JSON、LESS/SESS、Vue等文件打包成符合生产环节部署的前端资源。webpack官网是：http://webpack.github.io">
+<meta name="keywords" content="webpack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack学习笔记">
+<meta property="og:url" content="http://ligoweb.com/2017/03/05/webpack学习笔记/index.html">
 <meta property="og:site_name" content="立购网-Albin博客">
-<meta property="og:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta property="og:description" content="webpack是当下最热门的前端资源模块化管理和打包工具，它能将各种资源，例如CommonJs模块、AMD模块、ES6模块、JSON、LESS/SESS、Vue等文件打包成符合生产环节部署的前端资源。webpack官网是：http://webpack.github.io">
+<meta property="og:image" content="http://ligoweb.com/2017/03/05/webpack学习笔记/webpack-02.png">
+<meta property="og:image" content="http://ligoweb.com/2017/03/05/webpack学习笔记/webpack-01.png">
+<meta property="og:updated_time" content="2017-04-25T16:46:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="立购网-Albin博客">
-<meta name="twitter:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta name="twitter:title" content="webpack学习笔记">
+<meta name="twitter:description" content="webpack是当下最热门的前端资源模块化管理和打包工具，它能将各种资源，例如CommonJs模块、AMD模块、ES6模块、JSON、LESS/SESS、Vue等文件打包成符合生产环节部署的前端资源。webpack官网是：http://webpack.github.io">
+<meta name="twitter:image" content="http://ligoweb.com/2017/03/05/webpack学习笔记/webpack-02.png">
   
     <link rel="alternative" href="/atom.xml" title="立购网-Albin博客" type="application/atom+xml">
   
@@ -158,64 +163,211 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-webpack学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/12/canvas画图/" class="archive-article-date">
-  	<time datetime="2017-02-12T13:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/02/12/canvas画图/">canvas画图</a>
+    <h1 class="article-title" itemprop="name">
+      webpack学习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/05/webpack学习笔记/" class="archive-article-date">
+  	<time datetime="2017-03-05T13:49:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>webpack是当下最热门的前端资源模块化管理和打包工具，它能将各种资源，例如CommonJs模块、AMD模块、ES6模块、JSON、LESS/SESS、Vue等文件打包成符合生产环节部署的前端资源。<br>webpack官网是：<a href="http://webpack.github.io" target="_blank" rel="external">http://webpack.github.io</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="webpack和gulp-grunt有什么区别"><a href="#webpack和gulp-grunt有什么区别" class="headerlink" title="webpack和gulp/grunt有什么区别"></a>webpack和gulp/grunt有什么区别</h2><p>gulp/grunt是一种能够优化前端开发流程的工具，而webpack是一种模块化的解决方案;<br>gulp/grunt的工作方式是：在一个配置文件中，指明对某些文件进行编译、组合、压缩等任务的具体操作，这个工具之后能够自动替你完成这些任务，依赖各种相应的插件。</p>
+<img src="/2017/03/05/webpack学习笔记/webpack-02.png" alt="gulp/grunt流" title="gulp/grunt流">
+<!-- more -->
+<center style="font-size:20px">webpack工作流</center>
+
+<p>webpack的工作方式是：把你的项目当做一个整体，通过给定的主文件（如index.js）,webpack将从这个文件开始找到你项目的所有依赖文件，使用loaders处理它们。最后打包为一个浏览器可以识别的javascript文件</p>
+<img src="/2017/03/05/webpack学习笔记/webpack-01.png" alt="webpack流" title="webpack流">
+<center style="font-size:20px">webpack工作流</center>
+
+<h2 id="webpack的优势"><a href="#webpack的优势" class="headerlink" title="webpack的优势"></a>webpack的优势</h2><ol>
+<li>webpack是以commonJS的形式书写脚本的，但对AMD/CMD的支持也很全面，方便旧项目进行代码迁移</li>
+<li>能被模块化的不仅仅是JS</li>
+<li>开发便捷，能替代部分grunt/gulp的工作，比如打包、压缩、图片转base64等</li>
+<li>扩展性强，插件机制完善，支持热加载</li>
+</ol>
+<h2 id="webpack的安装使用"><a href="#webpack的安装使用" class="headerlink" title="webpack的安装使用"></a>webpack的安装使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">mkdir webpack-demo                  //新建webpack-deom文件夹</div><div class="line">cd webpack-demo                     //切换至该文件夹目录</div><div class="line">npm init -y                         //初始化</div><div class="line">npm install --save-dev webpack      //安装webpack</div><div class="line">webpack index.js build.js           //将index.js文件打包后生成build.js</div><div class="line">npm install css-loader style-loader --save-dev  //安装css文件支持和样式支持</div><div class="line">webpack index.js build.js --module-bind &apos;css=style-loader!css-loader&apos;   //引入css模块进行打包</div><div class="line">webpack index.css build.js --module-bind &apos;css=style-loader!css-loader&apos; --watch //监视打包文件的改动实时编译</div></pre></td></tr></table></figure>
+<h2 id="webpack-config-js配置"><a href="#webpack-config-js配置" class="headerlink" title="webpack.config.js配置"></a>webpack.config.js配置</h2><blockquote>
+<p>每个项目下都需配置一个默认的webpack.config.js文件，在命令行中执行webpack命令会自动执行webpack.config.js文件</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var path = require(&apos;path&apos;)</div><div class="line">module.exports = &#123;</div><div class="line">  entry: &apos;./src/script/main.js&apos;,</div><div class="line">  // 入口文件</div><div class="line">  output: &#123;</div><div class="line">    path: path.resolve(__dirname, &apos;./dist/js&apos;),</div><div class="line">    filename: &apos;build.js&apos;</div><div class="line">  &#125;</div><div class="line">  // 打包后的路径及文件名</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="entry和output"><a href="#entry和output" class="headerlink" title="entry和output"></a>entry和output</h2><blockquote>
+<p>entry是页面入口文件配置，可以支持多个入口文件<br>output是对于的输出配置，如果filename指定文件名则打包成一个文件，如果加入[id]、[name]、[hash]、[chunckhash]则打包成多个对应的文件</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">entry: &#123;</div><div class="line">  home: &quot;./home.js&quot;,</div><div class="line">  about: &quot;./about.js&quot;,</div><div class="line">  contact: &quot;./contact.js&quot;</div><div class="line">&#125;,</div><div class="line">output: &#123;</div><div class="line">  path: path.resolve(__dirname, &apos;./dist/js&apos;),</div><div class="line">  filename: &quot;[name].build.js&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipy.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ligoweb.com/2017/03/05/webpack学习笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/02/26/gulp学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          gulp学习笔记
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="webpack学习笔记" data-title="webpack学习笔记" data-url="http://ligoweb.com/2017/03/05/webpack学习笔记/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ligoweb"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -238,9 +390,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

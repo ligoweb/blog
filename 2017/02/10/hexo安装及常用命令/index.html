@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://ligoweb.com">
-  <title>Tag: html5 | 立购网-Albin博客</title>
+  <title>hexo安装及常用命令 | 立购网-Albin博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="立购网-Albin博客">
-<meta property="og:url" content="http://ligoweb.com/tags/html5/index.html">
+  <meta name="description" content="hexo使用前提是本机已正确安装了node.js和git">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo安装及常用命令">
+<meta property="og:url" content="http://ligoweb.com/2017/02/10/hexo安装及常用命令/index.html">
 <meta property="og:site_name" content="立购网-Albin博客">
-<meta property="og:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta property="og:description" content="hexo使用前提是本机已正确安装了node.js和git">
+<meta property="og:updated_time" content="2017-04-25T16:33:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="立购网-Albin博客">
-<meta name="twitter:description" content="江西科技学院10级，擅长各项前端技能，深入研究移动端开发与前端性能。">
+<meta name="twitter:title" content="hexo安装及常用命令">
+<meta name="twitter:description" content="hexo使用前提是本机已正确安装了node.js和git">
   
     <link rel="alternative" href="/atom.xml" title="立购网-Albin博客" type="application/atom+xml">
   
@@ -158,64 +160,248 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo安装及常用命令" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/12/canvas画图/" class="archive-article-date">
-  	<time datetime="2017-02-12T13:14:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/02/12/canvas画图/">canvas画图</a>
+    <h1 class="article-title" itemprop="name">
+      hexo安装及常用命令
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/02/10/hexo安装及常用命令/" class="archive-article-date">
+  	<time datetime="2017-02-10T13:30:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>hexo使用前提是本机已正确安装了node.js和git</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="hexo安装初始化"><a href="#hexo安装初始化" class="headerlink" title="hexo安装初始化"></a>hexo安装初始化</h2><figure class="highlight h"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli <span class="comment">// 全局安装hexo</span></div><div class="line">npm update hexo -g <span class="comment">// 升级hexo</span></div><div class="line">hexo init &lt;folder&gt; <span class="comment">// 初始化</span></div><div class="line">cd &lt;folder&gt;</div><div class="line">npm install <span class="comment">// 安装hexo必要的插件</span></div><div class="line">hexo v <span class="comment">// 显示hexo版本信息</span></div></pre></td></tr></table></figure>
+<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n &quot;我的博客&quot;  // =&gt; hexo new &quot;我的博客&quot;   根据默认模板新建文章</div><div class="line">hexo g // =&gt; hexo generate 生成本地静态页面</div><div class="line">hexo s // =&gt; hexo server 启动服务预览</div><div class="line">hexo d // =&gt; hexo deploy  部署</div></pre></td></tr></table></figure>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p><code>hexo new [layout] &lt;titile&gt;</code> </p>
+<blockquote>
+<p>新建一篇文章。如果没有设置layout的话，默认使用——config.yml中的default_layout参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+</blockquote>
+<p><code>hexo new draft &lt;titil&gt;</code></p>
+<blockquote>
+<p>新建草稿</p>
+</blockquote>
+<p><code>hexo publish [layout] &lt;filename&gt;</code></p>
+<blockquote>
+<p>发表草稿</p>
+</blockquote>
+<p><code>hexo new page &quot;pageName&quot;</code></p>
+<blockquote>
+<p>新建页面</p>
+</blockquote>
+<p><code>hexo list &lt;type&gt;</code></p>
+<blockquote>
+<p>列出网站资料。<code>type</code>可以取：page、post、router、tag、category。<br>这是一个简单的</p>
+</blockquote>
+<h2 id="文章模板"><a href="#文章模板" class="headerlink" title="文章模板"></a>文章模板</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">变量</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">layout</td>
+<td style="text-align:center">布局</td>
+</tr>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">标题</td>
+</tr>
+<tr>
+<td style="text-align:center">data</td>
+<td style="text-align:center">文件建立日期</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">title: 使用Hexo搭建个人博客</div><div class="line">layout: post</div><div class="line">date: 2017-04-20 19:07:43</div><div class="line">comments: true</div><div class="line">categories: Blog</div><div class="line">tags: [Hexo]</div><div class="line">keywords: Hexo, Blog</div><div class="line">description: hexo博客</div></pre></td></tr></table></figure>
+<h2 id="设置文章摘要"><a href="#设置文章摘要" class="headerlink" title="设置文章摘要"></a>设置文章摘要</h2><blockquote>
+<p>在需要摘取部分内容下并隐藏主要内容的地方插入一行代码<code>&lt;!-- more --&gt;</code>，即可实现展示部分内容。</p>
+</blockquote>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo server // hexo会监视文件变动并自动更新，无需启动服务器</div><div class="line">hexo server -s // 静态模式</div><div class="line">hexo server -p 5000 // 更改端口为5000</div><div class="line">hexo server -i 192.168.1.1 // 自定义IP</div><div class="line">hexo clean // 清除缓存文件(`db.js`)和已生成的静态文件(`public`)</div></pre></td></tr></table></figure>
+<h2 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate // 使用Hexo生成静态文件快速而且简单</div><div class="line">hexo generate --watch // 监视文件变动</div></pre></td></tr></table></figure>
+<blockquote>
+<p>修改hexo默认服务端口</p>
+</blockquote>
+<p>我们进入到hexo根目录，找到node_modules文件夹，然后找到hexo-server文件夹，在该文件夹下找到配置文件进行修改，主要修改两个文件，一个是index.js文件，打开该文件后将里面的port参数修改为5000，另一个是lib文件夹下的server.js文件，同样的方法将原来的参数4000修改为5000，这样重新运行hexo就可以会将默认服务端口修改为5000。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo s</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:5000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<p>这样每次重新部署时候，我们都可以进入浏览器在localhost:5000进行本地预览。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipy.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ligoweb.com/2017/02/10/hexo安装及常用命令/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/02/08/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/02/12/canvas画图/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">canvas画图</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="hexo安装及常用命令" data-title="hexo安装及常用命令" data-url="http://ligoweb.com/2017/02/10/hexo安装及常用命令/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"ligoweb"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -238,9 +424,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
